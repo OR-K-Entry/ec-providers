@@ -1,0 +1,2 @@
+# Oregon Kindergarten Readiness
+Data for this part of the project are private to protect student confidentiality. If you are interested in the data, please email the lead author ([Daniel Anderson](mailto:daniela@uoregon.edu)) directly.
