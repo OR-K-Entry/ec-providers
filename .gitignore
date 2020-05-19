@@ -1,3 +1,5 @@
+# distance files (too large)
+data/distances/*
 data/oka/*.xlsx
 .DS_Store
 # History files
