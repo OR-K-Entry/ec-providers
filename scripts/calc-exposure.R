@@ -34,6 +34,10 @@ exposure_of_schools <- data_to_model %>%
   summarize(number_of_providers = n(),
             mean_distance_to_providers = mean(miles))
 
+# note: above is where we can calculate exposure to *quality* providers
+# I think with something like the addition of these lines to summarize():
+# xposure_to_quality = quality_rating_of_provider * (1/mean_distance_to_providers)
+
 exposure_of_schools %>% 
   gather(key, val, -ncessch) %>% 
   ggplot(aes(x = val)) +
