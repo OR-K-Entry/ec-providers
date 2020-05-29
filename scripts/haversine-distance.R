@@ -57,9 +57,9 @@ full <- full %>%
   mutate(miles = compute_distance(nces_lon, nces_lat,
                                   provider_lon, provider_lat))
 
-write_csv(full, here::here("data", "all-haversine-distances.csv"))
+fs::dir_create(here::here("data", "distances"))
+write_csv(full, here::here("data", "distances", "all-haversine-distances.csv"))
 
 full %>% 
   filter(miles < 100) %>% 
-  write_csv(here::here("data", "haversine-100mi.csv"))
-
+  write_csv(here::here("data", "distances", "haversine-100mi.csv"))
